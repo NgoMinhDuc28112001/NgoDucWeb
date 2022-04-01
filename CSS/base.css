@@ -1,0 +1,23 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(91 94 250);
+}
+.gird{
+    max-width: 1222px;
+    margin: auto;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.gird__content{
+    max-width: 936px;
+    margin: auto;
+}
