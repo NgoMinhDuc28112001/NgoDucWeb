@@ -599,7 +599,7 @@
                     Color Palette
                 </div>
                 <div class="setting__content__bottom">
-                    <div class="setting__content__bottom__type">
+                    <div class="setting__content__bottom__type setting__content__bottom__type1">
                         
                     </div>
                     <div class="setting__content__bottom__type setting__content__bottom__type2">
@@ -710,11 +710,19 @@
             $('.content__portfolio__content--bottom__container-imgs:nth-child(4)').addClass('content__portfolio__content--bottom__container-imgs--hidden');
         })
         // Xử lý setting
-        
-        // Xử lý nút số 2
+        // Xử lý nút số 1
+        $('.setting__content__bottom__type1').click(function(){
+            $('body').removeClass('body__violet');
+            $('.container__content').removeClass('container__content__ogange')
+        })
         $('.setting__content__icon').click(function(){
             $('.setting__content').toggleClass('setting__content--left');
         })
+        // Xử lý nút số 2
         $('.setting__content__bottom__type2').click(function(){
             $('body').addClass('body__violet');
-            $('.container__content').addClass('container__content__ogang
+            $('.container__content').addClass('container__content__ogange')
+        })
+    })
+</script>
+</html>
