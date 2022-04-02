@@ -629,6 +629,53 @@
                 </div>
             </div>
         <!-- </div> -->
+        <!-- Xử lý nút li -->
+        <div class="container__items">
+            <ul class="container__items__list">
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        INTRODUCTION
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        SKILLS
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        EXPERIENCE
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        PORTFOLIO
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        REFERENCES
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+                <li class="container__items__items">
+                    <div class="container__items__items__top">
+                        CONNECT
+                        <div class="container__items__items__top__triangle"></div>
+                    </div>
+                    <div class="container__items__items__bottom"></div>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 <script>
@@ -731,6 +778,107 @@
             $('.header__road__text__road,.content__about-me__road,.content__personal_skills__road,.content__professional_skills__road,.content__personal_skills__content__persent__mess,.content__professional_skills__content__circle-items--background-color,.content__work-experience__road,.content__education__road,.content__experience__day,.content__portfolio__road,.content__references__road,.content__connect-me__road,.content__form--form__road').addClass('background2');
             $('.content__personal_skills__content__persent__mess__triangle').addClass('border-top2');
             $('.content__experience__day__triangle').addClass('border-right2');
+        })
+        // Xử lý hiệu ứng cuộn chuột
+        $(window).scroll(function(){
+            position = $('html').scrollTop();
+            console.log('Vị trí hiện tại là:' + position);
+            if(position >=600 && position < 900){
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').addClass('container__items__items__bottom__move')
+            }
+            else{
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }
+
+            if(position >= 900 && position < 1300){
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').addClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }else{
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').removeClass('container__items__items__bottom__move');
+            }
+            if(position >= 1300 && position < 2300){
+                $('.container__items__items:nth-child(3) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(3) .container__items__items__top').addClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }else{
+                $('.container__items__items:nth-child(3) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(3) .container__items__items__top').removeClass('container__items__items__bottom__move');
+            }
+
+            if(position >= 2300 && position < 2800){
+                $('.container__items__items:nth-child(4) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(4) .container__items__items__top').addClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(3) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(3) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }else{
+                $('.container__items__items:nth-child(4) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(4) .container__items__items__top').removeClass('container__items__items__bottom__move');
+            }
+
+            if(position >= 2800 && position < 3436){
+                $('.container__items__items:nth-child(5) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(5) .container__items__items__top').addClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(4) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(4) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(3) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(3) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }else{
+                $('.container__items__items:nth-child(5) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(5) .container__items__items__top').removeClass('container__items__items__bottom__move');
+            }
+
+            if(position >= 3436){
+                $('.container__items__items:nth-child(6) .container__items__items__bottom').addClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(6) .container__items__items__top').addClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(5) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(5) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(4) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(4) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(3) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(3) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(2) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(2) .container__items__items__top').removeClass('container__items__items__bottom__move');
+                $('.container__items__items:nth-child(1) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(1) .container__items__items__top').removeClass('container__items__items__bottom__move')
+            }else{
+                $('.container__items__items:nth-child(6) .container__items__items__bottom').removeClass('container__items__items__bottom__background');
+                $('.container__items__items:nth-child(6) .container__items__items__top').removeClass('container__items__items__bottom__move');
+            }
+        })
+        // Xử lý nhấn nút bên phải
+        $('.container__items__items:nth-child(1) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:600})
+        })
+        $('.container__items__items:nth-child(2) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:900})
+        })
+        $('.container__items__items:nth-child(3) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:1300})
+        })
+        $('.container__items__items:nth-child(4) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:2300})
+        })
+        $('.container__items__items:nth-child(5) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:2800})
+        })
+        $('.container__items__items:nth-child(6) .container__items__items__bottom').click(function(){
+            $('html').animate({scrollTop:3436})
         })
     })
 </script>
