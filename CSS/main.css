@@ -755,3 +755,12 @@
     opacity: 1;
     visibility: visible;
 }
+.container__items__items:hover .container__items__items__bottom__background2{
+    background-color:#fbc55e;
+}
+.container__items__items__top__background2{
+    background-color:#fbc55e;
+}
+.container__items__items__top____triangle__background2{
+    border-left:  11px solid #fbc55e;
+}
