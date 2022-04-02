@@ -713,15 +713,24 @@
         // Xử lý nút số 1
         $('.setting__content__bottom__type1').click(function(){
             $('body').removeClass('body__violet');
-            $('.container__content').removeClass('container__content__ogange')
+            $('.container__content').removeClass('container__content__ogange');
+            $('.header__download__i').removeClass('color2');
+            $('.header__road__text__road,.content__about-me__road,.content__personal_skills__road,.content__professional_skills__road,.content__personal_skills__content__persent__mess,.content__professional_skills__content__circle-items--background-color,.content__work-experience__road,.content__education__road,.content__experience__day,.content__portfolio__road,.content__references__road,.content__connect-me__road,.content__form--form__road').removeClass('background2');
+            $('.content__personal_skills__content__persent__mess__triangle').removeClass('border-top2');
+            $('.content__experience__day__triangle').removeClass('border-right2');
         })
+        // Xử lý icon setting
         $('.setting__content__icon').click(function(){
             $('.setting__content').toggleClass('setting__content--left');
         })
         // Xử lý nút số 2
         $('.setting__content__bottom__type2').click(function(){
             $('body').addClass('body__violet');
-            $('.container__content').addClass('container__content__ogange')
+            $('.container__content').addClass('container__content__ogange');
+            $('.header__download__i').addClass('color2');
+            $('.header__road__text__road,.content__about-me__road,.content__personal_skills__road,.content__professional_skills__road,.content__personal_skills__content__persent__mess,.content__professional_skills__content__circle-items--background-color,.content__work-experience__road,.content__education__road,.content__experience__day,.content__portfolio__road,.content__references__road,.content__connect-me__road,.content__form--form__road').addClass('background2');
+            $('.content__personal_skills__content__persent__mess__triangle').addClass('border-top2');
+            $('.content__experience__day__triangle').addClass('border-right2');
         })
     })
 </script>

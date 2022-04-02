@@ -513,7 +513,7 @@
     left: -118px;
     right: -118px;
     position: relative;
-    height: 568px;
+    height: 620px;
 }
 .content__form__label-input{
     padding: 45px;
@@ -605,7 +605,7 @@
     background-color: rgba(0,0, 0, 0.7);
     padding: 10px;
     width: 180px;
-    left: 0;
+    left: -180px;
     transition: 0.4s;
 }
 .setting__content__top{
@@ -664,11 +664,24 @@
     color: white;
 }
 .setting__content--left{
-    left: -180px;
+    left: 0px;
 }
 .body__violet{
-    background-color: #6355b3;
+    background-image: url(../images/background.png),
+    linear-gradient(0deg, #6355b3, #6355b3);
 }
 .container__content__ogange{
     border: 25px solid #fbc55e;
+}
+.color2{
+    color: #42d4d1;
+}
+.background2{
+    background-color: #42d4d1;
+}
+.border-top2{
+    border-top:6px solid #42d4d1;
+}
+.border-right2{
+    border-right:14px solid #42d4d1;
 }
